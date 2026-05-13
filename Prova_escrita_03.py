@@ -79,18 +79,18 @@ persones_4 = [
     {'nom': 'Marc Puig', 'edat': '42'},
     {'nom': 'Laura Martí', 'edat': 35}
 ]
+if __name__ == "__main__":
+    print("=== Prova 1: ===")
+    print(trobar_edat_maxima(persones_1))
 
-print("=== Prova 1: ===")
-print(trobar_edat_maxima(persones_1))
+    print("=== Prova 2: ===")
+    print(trobar_edat_maxima(persones_2))
 
-print("=== Prova 2: ===")
-print(trobar_edat_maxima(persones_2))
+    print("=== Prova 3: ===")
+    print(trobar_edat_maxima(persones_3))
 
-print("=== Prova 3: ===")
-print(trobar_edat_maxima(persones_3))
-
-print("=== Prova 4: ===")
-print(trobar_edat_maxima(persones_4))
+    print("=== Prova 4: ===")
+    print(trobar_edat_maxima(persones_4))
 
 
 # =========================

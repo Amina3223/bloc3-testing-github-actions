@@ -40,20 +40,16 @@ def trobar_edat_maxima(persones):
     if not persones:
         return -1
 
-    edats = []
-
     for persona in persones:
         if (
-            isinstance(persona, dict)
-            and "nom" in persona
-            and "edat" in persona
-            and isinstance(persona["edat"], int)
+            not isinstance(persona, dict)
+            or "nom" not in persona
+            or "edat" not in persona
+            or not isinstance(persona["edat"], int)
         ):
-            edats.append(persona["edat"])
+            return -1
 
-    if not edats:
-        return -1
-
+    edats = [persona["edat"] for persona in persones]
     return max(edats)
 
 persones_1 = [
